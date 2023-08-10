@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css"
+        integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ROT13</title>
+</head>
+
+<body>
+    <section class="py-5">
+        <div class="container text-center">
+        <h1>ROT13 Decrypter</h1>
+        <input class="form-control my-3" type="text" name="encrypted" id="encrypted">
+        <button class="btn btn-primary w-100" onclick="rot13()">Decrypt</button>
+    </div>
+    </section>
+    <h3 id="decrypted" class="text-center"></h3>
+    <hr>
+    <section class="py-5">
+        <div class="container text-center">
+        <h1>ROT13 Encrypter</h1>
+        <input class="form-control my-3" type="text" name="decrypted_" id="decrypted_">
+        <button class="btn btn-primary w-100" onclick="encryptRot13()">Encrypt</button>
+    </div>
+    </section>
+    <h3 id="encrypted_" class="text-center"></h3>
+    <script src="script.js"></script>
+</body>
+
+</html>
